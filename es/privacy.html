@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Política de privacidad de Kozue</title>
+<meta name="description" content="Política de privacidad de Kozue">
+<link rel="canonical" href="https://kozue.app/es/privacy.html">
+<link rel="alternate" hreflang="es" href="https://kozue.app/es/privacy.html">
+<link rel="alternate" hreflang="en" href="https://kozue.app/en/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://kozue.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Política de privacidad de Kozue">
+<meta property="og:description" content="Política de privacidad de Kozue">
+<meta property="og:url" content="https://kozue.app/es/privacy.html">
+
+<meta name="theme-color" content="#13213f">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/img/icono-300.png">
+<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Ir al contenido</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/es/"><img src="/assets/img/icono-71.png" alt="" width="30" height="30">Kozue</a>
+    <nav class="nav" aria-label="Kozue">
+      <a href="/es/#funciones">Funciones</a>
+      <a href="/es/#descargar">Descargar</a>
+      <a href="/es/privacy.html">Privacidad</a>
+      <a href="https://github.com/kozue-app/kozue">GitHub</a>
+      <label class="lang"><span class="skip">Idioma</span>
+        <select id="lang" aria-label="Idioma" data-path="/{l}/privacy.html">
+          <option value="es" lang="es" selected>Español</option><option value="en" lang="en">English</option>
+        </select>
+      </label>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+  <div class="wrap doc"><article>
+<h1>Política de privacidad de Kozue</h1>
+<p>Última actualización: 21 de noviembre de 2026</p>
+<p><a href="/en/privacy.html">English</a></p>
+<p>Kozue es un lector de feeds (RSS, Atom, JSON Feed) para Windows. Esta política explica qué datos trata Kozue y adónde van.</p>
+<p><strong>En resumen:</strong> Kozue no tiene servidores propios. No recoge datos de uso, no tiene analítica ni publicidad y no envía nada a quien lo desarrolla. Lo que haces en Kozue se queda en tu PC o va a los servicios que tú eliges.</p>
+<h2>Responsable</h2>
+<p>Yukio Mizuta (Giovanni Ceballos Contreras)<br>c/o Autorenglück #49349<br>Albert-Einstein-Str. 47<br>02977 Hoyerswerda<br>Alemania<br>Correo: <a href="mailto:hello@kozue.app">hello@kozue.app</a></p>
+<h2>Qué guarda Kozue en tu PC</h2>
+<p>En la carpeta de datos de Kozue, en tu cuenta de Windows:</p>
+<ul><li>Tus ajustes y tus cuentas (la dirección del servicio y el usuario).</li><li>Las contraseñas, claves y tokens de tus cuentas, cifrados con la protección de datos de Windows (solo tu usuario de Windows puede descifrarlos).</li><li>Las fuentes, carpetas y artículos: los que Kozue descarga en el modo sin servidor y los que guarda para leer sin conexión.</li><li>Tus etiquetas, enlaces guardados, filtros y la posición de lo que escuchas o ves.</li><li>Un registro de los errores de Kozue (<code>errores.json</code>). Puede incluir direcciones de tus servicios o fuentes; Kozue las quita, junto con claves, correos y tu usuario de Windows, antes de enseñarlo o de que lo envíes.</li></ul>
+<p>Nada de esto sale de tu PC salvo en los casos de abajo. Al desinstalar Kozue o eliminar una cuenta en Kozue, puedes borrarlo.</p>
+<h2>A qué se conecta Kozue</h2>
+<p>Kozue solo se conecta a lo que tú eliges usar:</p>
+<ul><li><strong>Tu servicio de feeds</strong> (Miniflux, Feedbin, Inoreader, Nextcloud News u otro), con tus credenciales, para leer y marcar tus artículos. Si usas la sincronización de Kozue, tus etiquetas, enlaces guardados, filtros y canales se guardan en ese mismo servicio. Ese servicio trata tus datos según su propia política.</li><li><strong>Las webs y feeds a los que te suscribes</strong>: sin servidor, Kozue descarga los feeds y los iconos de las webs directamente. Al pedir el texto completo de un artículo, descarga su página.</li><li><strong>Lo que incluyen los artículos</strong>: imágenes, audio, vídeo y contenido incrustado (por ejemplo, vídeos de YouTube, que Kozue carga desde <code>youtube-nocookie.com</code>) se cargan desde sus servidores al abrir el artículo.</li><li><strong>YouTube y Twitch</strong>, si añades canales a Directos o una dirección de YouTube: Kozue consulta sus webs para saber qué se emite y para encontrar el feed de un canal.</li><li><strong>Emisoras de radio y podcasts</strong> que escuchas.</li><li><strong>Servicios opcionales que configures tú</strong> (Directos y Nostr): Kozue les pide lo que necesitas a través de la dirección que indiques.</li></ul>
+<p>En todas estas conexiones, quien recibe la petición ve tu dirección IP y los datos normales de una petición web, como con cualquier navegador. Kozue no añade identificadores propios.</p>
+<h2>Informes de errores</h2>
+<p>Kozue no envía errores por su cuenta. En Ajustes → Diagnóstico puedes ver, copiar o guardar el registro de errores. Con «Enviar a GitHub…» se abre tu navegador con un informe ya escrito (versiones de Kozue y de Windows, idioma, tipo de servicio sin su dirección y los errores, sin datos privados). Lo revisas y lo envías tú, con tu cuenta de GitHub. Los informes son públicos y GitHub los trata según su propia política.</p>
+<h2>Descargas y actualizaciones</h2>
+<p>Si descargas Kozue desde la Microsoft Store, winget o GitHub, Microsoft o GitHub tratan los datos de esa descarga según sus propias políticas. Kozue no recibe esos datos.</p>
+<h2>Esta web (kozue.app)</h2>
+<p>La web kozue.app está alojada en GitHub Pages (GitHub, Inc.). Al visitarla, GitHub recibe tu dirección IP y los datos normales de una petición web para servirte las páginas y proteger el servicio, según su propia política de privacidad. La web no usa cookies, analítica ni contenido de terceros: las fuentes tipográficas se sirven desde la propia web. Si eliges un idioma, se guarda en tu navegador (almacenamiento local) para mostrarte ese idioma la próxima vez; no sale de tu navegador.</p>
+<h2>Menores</h2>
+<p>Kozue no está dirigido a menores de 16 años y no recoge datos de nadie.</p>
+<h2>Tus derechos</h2>
+<p>Como Kozue no envía tus datos a quien lo desarrolla, todo lo que guarda está en tu PC y bajo tu control. Para cualquier pregunta sobre esta política o sobre tus derechos de protección de datos (acceso, rectificación, supresión, oposición…), escribe al correo de arriba. También puedes reclamar ante la autoridad de protección de datos de tu país.</p>
+<h2>Cambios</h2>
+<p>Si esta política cambia, la nueva versión se publicará aquí con su fecha.</p>
+  </article></div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Yukio Mizuta</span>
+    <a href="/es/privacy.html">Privacidad</a>
+    <a href="/impressum.html">Aviso legal</a>
+    <a href="https://github.com/kozue-app/kozue/issues">Informar de un error</a>
+    <span>Contacto: <span class="mail">hello@kozue.app</span></span>
+    <nav class="langs" aria-label="Idioma"><a href="/es/privacy.html" lang="es" hreflang="es">Español</a><a href="/en/privacy.html" lang="en" hreflang="en">English</a></nav>
+  </div>
+</footer>
+<script>
+  // Al elegir idioma: se recuerda (solo en este navegador) y se va a esa versión.
+  document.getElementById('lang').addEventListener('change', (ev) => {
+    const l = ev.target.value;
+    try { localStorage.setItem('kozue-web-lang', l); } catch {}
+    location.href = ev.target.dataset.path.replace('{l}', l);
+  });
+  document.querySelectorAll('.langs a').forEach((a) => a.addEventListener('click', () => { try { localStorage.setItem('kozue-web-lang', a.lang); } catch {} }));
+  const copy = document.getElementById('copy');
+  if (copy) copy.addEventListener('click', async () => {
+    const code = document.getElementById('winget');
+    try { await navigator.clipboard.writeText(code.textContent); copy.textContent = copy.dataset.copied; }
+    catch { const r = document.createRange(); r.selectNodeContents(code); const s = getSelection(); s.removeAllRanges(); s.addRange(r); copy.textContent = copy.dataset.selected; }
+    setTimeout(() => { copy.textContent = copy.dataset.label; }, 1800);
+  });
+</script>
+</body>
+</html>

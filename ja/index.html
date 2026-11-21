@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kozue · Windows 用フィードリーダー</title>
+<meta name="description" content="Kozue は、フォローしているサイトやブログ、ポッドキャスト、チャンネルをひとつにまとめます。サーバーなしで PC だけでも、Miniflux、Feedbin、Inoreader などのサービスと一緒にも使えます。">
+<link rel="canonical" href="https://kozue.app/ja/">
+<link rel="alternate" hreflang="es" href="https://kozue.app/es/">
+<link rel="alternate" hreflang="en" href="https://kozue.app/en/">
+<link rel="alternate" hreflang="de" href="https://kozue.app/de/">
+<link rel="alternate" hreflang="fr" href="https://kozue.app/fr/">
+<link rel="alternate" hreflang="it" href="https://kozue.app/it/">
+<link rel="alternate" hreflang="pt" href="https://kozue.app/pt/">
+<link rel="alternate" hreflang="ar" href="https://kozue.app/ar/">
+<link rel="alternate" hreflang="zh-Hant" href="https://kozue.app/zh-Hant/">
+<link rel="alternate" hreflang="zh-Hans" href="https://kozue.app/zh-Hans/">
+<link rel="alternate" hreflang="ja" href="https://kozue.app/ja/">
+<link rel="alternate" hreflang="ko" href="https://kozue.app/ko/">
+<link rel="alternate" hreflang="ru" href="https://kozue.app/ru/">
+<link rel="alternate" hreflang="hi" href="https://kozue.app/hi/">
+<link rel="alternate" hreflang="x-default" href="https://kozue.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kozue · Windows 用フィードリーダー">
+<meta property="og:description" content="Kozue は、フォローしているサイトやブログ、ポッドキャスト、チャンネルをひとつにまとめます。サーバーなしで PC だけでも、Miniflux、Feedbin、Inoreader などのサービスと一緒にも使えます。">
+<meta property="og:url" content="https://kozue.app/ja/">
+<meta property="og:image" content="https://kozue.app/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#13213f">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/img/icono-300.png">
+<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/ja/"><img src="/assets/img/icono-71.png" alt="" width="30" height="30">Kozue</a>
+    <nav class="nav" aria-label="Kozue">
+      <a href="/ja/#funciones">機能</a>
+      <a href="/ja/#descargar">ダウンロード</a>
+      <a href="/en/privacy.html">プライバシー</a>
+      <a href="https://github.com/kozue-app/kozue">GitHub</a>
+      <label class="lang"><span class="skip">言語</span>
+        <select id="lang" aria-label="言語" data-path="/{l}/">
+          <option value="es" lang="es">Español</option><option value="en" lang="en">English</option><option value="de" lang="de">Deutsch</option><option value="fr" lang="fr">Français</option><option value="it" lang="it">Italiano</option><option value="pt" lang="pt">Português</option><option value="ar" lang="ar">العربية</option><option value="zh-Hant" lang="zh-Hant">繁體中文</option><option value="zh-Hans" lang="zh-Hans">简体中文</option><option value="ja" lang="ja" selected>日本語</option><option value="ko" lang="ko">한국어</option><option value="ru" lang="ru">Русский</option><option value="hi" lang="hi">हिन्दी</option>
+        </select>
+      </label>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Windows 用フィードリーダー</p>
+        <h1><span class="k" lang="ja">梢</span>アルゴリズムなしで、ゆっくり読むフィード。</h1>
+        <p class="lede">Kozue は、フォローしているサイトやブログ、ポッドキャスト、チャンネルをひとつにまとめます。アカウントもサーバーもいらず PC だけで動き、すでに使っているフィードサービスとも連携できます。</p>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/kozue-app/kozue/releases/latest">インストーラーをダウンロード <small>無料</small></a>
+        </div>
+        
+      </div>
+      <figure class="shot">
+        <img src="/assets/img/oscuro-en.jpg" width="1600" height="900" alt="ダークテーマの Kozue。4 つのフィードがあるサイドバー、記事の一覧、北斎の「神奈川沖浪裏」を載せた記事。">
+      </figure>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="modos">
+    <div class="wrap">
+      <h2 id="modos">サーバーなしでも、自分のサーバーでも</h2>
+      <p class="intro">初めて Kozue を開くときに選びます。複数のアカウントを持ち、切り替えられます。</p>
+      <div class="modes">
+        <div class="mode">
+          <h3>この PC で</h3>
+          <p>サイトのアドレスを貼り付けると、Kozue がフィードを見つけてダウンロードし、PC に保存します。登録は不要です。</p>
+          <div class="feed" dir="ltr">&lt;link rel="alternate" type="application/rss+xml"
+      href="<b>/feed.xml</b>"&gt;</div>
+        </div>
+        <div class="mode">
+          <h3>お使いのサービスで</h3>
+          <p>スマートフォンや他のパソコンと同じ内容を読めます。Kozue はすでに使っているフィードサービスと同期します。</p>
+          <ul class="services"><li>Miniflux</li><li>FreshRSS</li><li>Inoreader</li><li>Feedbin</li><li>Nextcloud News</li><li>NewsBlur</li><li>Tiny Tiny RSS</li><li>The Old Reader</li><li>Google Reader API</li><li>Fever API</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="funciones" aria-labelledby="funciones-t">
+    <div class="wrap">
+      <h2 id="funciones-t">ゆっくり読むために</h2>
+      <div class="features">
+        <div><h3>全文表示</h3><p>元のサイトから記事全体を取得します。メニューやサイドバー、広告はありません。</p></div>
+        <div><h3>オフライン</h3><p>最新の記事とお気に入りは PC に残ります。電車の中でも、ネットがつながらなくても読めます。</p></div>
+        <div><h3>タイムライン</h3><p>しおりのように、それぞれの表示でどこまで読んだかを Kozue が覚えています。</p></div>
+        <div><h3>ポッドキャストと動画</h3><p>再生位置を覚えるプレーヤーと、読みながら見続けられるフローティングウィンドウ。ラジオや YouTube・Twitch のライブ配信にも対応します。</p></div>
+        <div><h3>キーボードで</h3><p><kbd>j</kbd> <kbd>k</kbd> で移動、<kbd>スペース</kbd> で先へ進み、<kbd>m</kbd> で既読にします。ナレーターや NVDA でも使えるように作っています。</p></div>
+        <div><h3>あなたの言語で</h3><p>スペイン語、英語、ドイツ語、フランス語、イタリア語、ポルトガル語、アラビア語、中国語、日本語、韓国語、ロシア語、ヒンディー語。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="temas">
+    <div class="wrap split">
+      <figure class="shot">
+        <img src="/assets/img/claro-en.jpg" width="1400" height="788" alt="ライトテーマの Kozue。北斎の「凱風快晴」（赤富士）についての記事。" loading="lazy">
+        <figcaption>ライトテーマ。スクリーンショットには、パブリックドメインの浮世絵を使ったサンプルのフィードを使っています。</figcaption>
+      </figure>
+      <div class="text">
+        <h2 id="temas">ライト、ダーク、好みに合わせて</h2>
+        <p>フォント、サイズ、列の幅、テーマを選べます。Windows のテーマに合わせることもできます。</p>
+        <p>フォルダー、お気に入り、タグ、あとで読むリンクで整理し、フィードの種類や言葉でフィルターを作れます。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band privacy" id="privacidad" aria-labelledby="priv-t">
+    <div class="wrap">
+      <div><h2 id="priv-t">Kozue にはサーバーがありません</h2></div>
+      <ul>
+        <li>利用データを集めず、広告も解析ツールもなく、開発者に何も送りません。</li>
+        <li>パスワードは Windows のデータ保護で暗号化して保存します。</li>
+        <li>接続するのは、あなたが選んだものだけです。フィード、記事のサイト、そしてお使いのサービス。</li>
+        <li><a href="/en/privacy.html">プライバシーポリシー全文（英語）</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band" id="descargar" aria-labelledby="dl-t">
+    <div class="wrap">
+      <h2 id="dl-t">ダウンロード</h2>
+      <p class="intro">無料です。インストール方法を選んでください。</p>
+      <div class="download">
+        <div class="dl">
+          <h3>Microsoft Store <span class="soon">近日公開</span></h3>
+          <p>Microsoft の署名付きで、自動で更新されます。いちばん手軽な方法です。</p>
+          
+        </div>
+        <div class="dl">
+          <h3>winget <span class="soon">近日公開</span></h3>
+          <p>ターミナルからインストールする方へ。<code dir="ltr">winget upgrade</code> で更新できます。</p>
+          <div class="cmd"><code dir="ltr">winget install Kozue.Kozue</code></div>
+        </div>
+        <div class="dl">
+          <h3>GitHub</h3>
+          <p>インストーラーとポータブル版、各バージョンのコンポーネント一覧。まだ署名していないため、初回は Windows が警告を出すことがあります。</p>
+          <a class="btn ghost" href="https://github.com/kozue-app/kozue/releases/latest">バージョン一覧を見る</a>
+        </div>
+      </div>
+      <p class="req">Windows 10（1809）以降、64 ビット。</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Yukio Mizuta</span>
+    <a href="/en/privacy.html">プライバシー</a>
+    <a href="/impressum.html">法的情報</a>
+    <a href="https://github.com/kozue-app/kozue/issues">不具合を報告</a>
+    <span>お問い合わせ: <span class="mail">hello@kozue.app</span></span>
+    <nav class="langs" aria-label="言語"><a href="/es/" lang="es" hreflang="es">Español</a><a href="/en/" lang="en" hreflang="en">English</a><a href="/de/" lang="de" hreflang="de">Deutsch</a><a href="/fr/" lang="fr" hreflang="fr">Français</a><a href="/it/" lang="it" hreflang="it">Italiano</a><a href="/pt/" lang="pt" hreflang="pt">Português</a><a href="/ar/" lang="ar" hreflang="ar">العربية</a><a href="/zh-Hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a><a href="/zh-Hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a><a href="/ja/" lang="ja" hreflang="ja">日本語</a><a href="/ko/" lang="ko" hreflang="ko">한국어</a><a href="/ru/" lang="ru" hreflang="ru">Русский</a><a href="/hi/" lang="hi" hreflang="hi">हिन्दी</a></nav>
+  </div>
+</footer>
+<script>
+  // Al elegir idioma: se recuerda (solo en este navegador) y se va a esa versión.
+  document.getElementById('lang').addEventListener('change', (ev) => {
+    const l = ev.target.value;
+    try { localStorage.setItem('kozue-web-lang', l); } catch {}
+    location.href = ev.target.dataset.path.replace('{l}', l);
+  });
+  document.querySelectorAll('.langs a').forEach((a) => a.addEventListener('click', () => { try { localStorage.setItem('kozue-web-lang', a.lang); } catch {} }));
+  const copy = document.getElementById('copy');
+  if (copy) copy.addEventListener('click', async () => {
+    const code = document.getElementById('winget');
+    try { await navigator.clipboard.writeText(code.textContent); copy.textContent = copy.dataset.copied; }
+    catch { const r = document.createRange(); r.selectNodeContents(code); const s = getSelection(); s.removeAllRanges(); s.addRange(r); copy.textContent = copy.dataset.selected; }
+    setTimeout(() => { copy.textContent = copy.dataset.label; }, 1800);
+  });
+</script>
+</body>
+</html>
