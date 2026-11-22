@@ -10,7 +10,7 @@ import { LANGS, NATIVE, RTL, T } from './strings.mjs';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://kozue.app';
 // Cuando estén publicados, a true: salen los botones de la Store y el comando de winget en la portada.
-const STORE_LIVE = false;
+const STORE_LIVE = true;
 const WINGET_LIVE = false;
 const STORE_URL = 'https://apps.microsoft.com/detail/9N1N12TKRVL7';
 const RELEASES = 'https://github.com/kozue-app/kozue/releases/latest';
