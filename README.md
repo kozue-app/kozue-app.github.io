@@ -8,5 +8,6 @@ La web de [Kozue](https://github.com/kozue-app/kozue), lector de feeds para Wind
 - `assets/`: estilos, imágenes (capturas con fuentes de ejemplo y grabados de dominio público) y las fuentes, alojadas aquí (SIL OFL 1.1, licencias en `assets/fonts/`) para que la IP de quien visita la web no llegue a Google.
 
 - `.well-known/atproto-did`: el DID de la cuenta de Bluesky, para el identificador `@kozue.app` (escrito a mano; `src/build.mjs` no lo toca).
+- `.well-known/nostr.json`: la verificación NIP-05 de Nostr. La cuenta de Kozue (`npub1k0zuehy9…`, en hexadecimal) con dos nombres: `_` (se ve como `kozue.app`) y `kozue` (`kozue@kozue.app`). Para añadir otra persona, otra línea en `names` con su clave en hexadecimal (nunca la `nsec`).
 
 Para cambiar algo: editar `src/`, `node src/build.mjs` y subir también lo generado.
