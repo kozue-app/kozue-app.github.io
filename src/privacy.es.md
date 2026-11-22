@@ -1,6 +1,6 @@
 # Política de privacidad de Kozue
 
-Última actualización: 21 de noviembre de 2026
+Última actualización: 22 de noviembre de 2026
 
 [English](PRIVACY.md)
 
