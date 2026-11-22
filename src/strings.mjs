@@ -50,7 +50,7 @@ export const T = {
     wingetH: 'winget', wingetP: 'Para quien instala desde la terminal. Se actualiza con {cmd}.',
     githubH: 'GitHub', githubP: 'El instalador y la versión portátil, con la lista de componentes de cada versión. Aún sin firmar: Windows puede avisar la primera vez.', githubBtn: 'Ver las versiones',
     soon: 'pronto', req: 'Windows 10 (1809) o posterior, 64 bits.',
-    report: 'Informar de un error', contact: 'Contacto', impressum: 'Aviso legal',
+    report: 'Informar de un error', contact: 'Contacto', impressum: 'Aviso legal', license: 'Licencia de uso',
     privacyPage: 'es',
   },
   en: {
@@ -93,7 +93,7 @@ export const T = {
     wingetH: 'winget', wingetP: 'For those who install from the terminal. Update with {cmd}.',
     githubH: 'GitHub', githubP: 'The installer and the portable version, with the component list of each release. Not signed yet: Windows may warn the first time.', githubBtn: 'See the releases',
     soon: 'soon', req: 'Windows 10 (1809) or later, 64-bit.',
-    report: 'Report a bug', contact: 'Contact', impressum: 'Legal notice',
+    report: 'Report a bug', contact: 'Contact', impressum: 'Legal notice', license: 'License agreement',
     privacyPage: 'en',
   },
   de: {
@@ -136,7 +136,7 @@ export const T = {
     wingetH: 'winget', wingetP: 'Für alle, die über das Terminal installieren. Aktualisieren mit {cmd}.',
     githubH: 'GitHub', githubP: 'Der Installer und die portable Version, mit der Komponentenliste jeder Version. Noch nicht signiert: Windows kann beim ersten Mal warnen.', githubBtn: 'Versionen ansehen',
     soon: 'bald', req: 'Windows 10 (1809) oder neuer, 64 Bit.',
-    report: 'Fehler melden', contact: 'Kontakt', impressum: 'Impressum',
+    report: 'Fehler melden', contact: 'Kontakt', impressum: 'Impressum', license: 'Lizenzvereinbarung',
     privacyPage: 'en',
   },
   fr: {
@@ -179,7 +179,7 @@ export const T = {
     wingetH: 'winget', wingetP: 'Pour installer depuis le terminal. Mise à jour avec {cmd}.',
     githubH: 'GitHub', githubP: 'Le programme d’installation et la version portable, avec la liste des composants de chaque version. Pas encore signé : Windows peut afficher un avertissement la première fois.', githubBtn: 'Voir les versions',
     soon: 'bientôt', req: 'Windows 10 (1809) ou ultérieur, 64 bits.',
-    report: 'Signaler un bug', contact: 'Contact', impressum: 'Mentions légales',
+    report: 'Signaler un bug', contact: 'Contact', impressum: 'Mentions légales', license: 'Contrat de licence',
     privacyPage: 'en',
   },
   it: {
@@ -222,7 +222,7 @@ export const T = {
     wingetH: 'winget', wingetP: 'Per chi installa dal terminale. Si aggiorna con {cmd}.',
     githubH: 'GitHub', githubP: 'Il programma di installazione e la versione portatile, con l’elenco dei componenti di ogni versione. Non ancora firmato: Windows può avvisare la prima volta.', githubBtn: 'Vedi le versioni',
     soon: 'presto', req: 'Windows 10 (1809) o successivo, 64 bit.',
-    report: 'Segnala un errore', contact: 'Contatto', impressum: 'Note legali',
+    report: 'Segnala un errore', contact: 'Contatto', impressum: 'Note legali', license: 'Contratto di licenza',
     privacyPage: 'en',
   },
   pt: {
@@ -265,7 +265,7 @@ export const T = {
     wingetH: 'winget', wingetP: 'Para quem instala a partir do terminal. Atualiza-se com {cmd}.',
     githubH: 'GitHub', githubP: 'O instalador e a versão portátil, com a lista de componentes de cada versão. Ainda sem assinatura: o Windows pode avisar da primeira vez.', githubBtn: 'Ver as versões',
     soon: 'em breve', req: 'Windows 10 (1809) ou posterior, 64 bits.',
-    report: 'Comunicar um erro', contact: 'Contacto', impressum: 'Aviso legal',
+    report: 'Comunicar um erro', contact: 'Contacto', impressum: 'Aviso legal', license: 'Contrato de licença',
     privacyPage: 'en',
   },
   ar: {
@@ -308,7 +308,7 @@ export const T = {
     wingetH: 'winget', wingetP: 'لمن يثبّت من الطرفية. يُحدَّث بالأمر {cmd}.',
     githubH: 'GitHub', githubP: 'برنامج التثبيت والنسخة المحمولة، مع قائمة مكونات كل إصدار. غير موقَّع بعد: قد ينبّهك Windows في المرة الأولى.', githubBtn: 'عرض الإصدارات',
     soon: 'قريبًا', req: 'Windows 10 (1809) أو أحدث، 64 بت.',
-    report: 'الإبلاغ عن خطأ', contact: 'التواصل', impressum: 'إشعار قانوني',
+    report: 'الإبلاغ عن خطأ', contact: 'التواصل', impressum: 'إشعار قانوني', license: 'اتفاقية الترخيص',
     privacyPage: 'en',
   },
   'zh-Hant': {
@@ -351,7 +351,7 @@ export const T = {
     wingetH: 'winget', wingetP: '適合從終端機安裝的人。用 {cmd} 更新。',
     githubH: 'GitHub', githubP: '安裝程式和免安裝版，附上每個版本的元件清單。尚未簽署：Windows 第一次可能會跳出警告。', githubBtn: '查看各版本',
     soon: '即將推出', req: 'Windows 10（1809）或更新版本，64 位元。',
-    report: '回報錯誤', contact: '聯絡', impressum: '法律聲明',
+    report: '回報錯誤', contact: '聯絡', impressum: '法律聲明', license: '授權協議',
     privacyPage: 'en',
   },
   'zh-Hans': {
@@ -394,7 +394,7 @@ export const T = {
     wingetH: 'winget', wingetP: '适合从终端安装的人。用 {cmd} 更新。',
     githubH: 'GitHub', githubP: '安装程序和便携版，附有每个版本的组件清单。尚未签名：Windows 第一次可能会提示警告。', githubBtn: '查看各版本',
     soon: '即将推出', req: 'Windows 10（1809）或更高版本，64 位。',
-    report: '报告错误', contact: '联系', impressum: '法律声明',
+    report: '报告错误', contact: '联系', impressum: '法律声明', license: '许可协议',
     privacyPage: 'en',
   },
   ja: {
@@ -437,7 +437,7 @@ export const T = {
     wingetH: 'winget', wingetP: 'ターミナルからインストールする方へ。{cmd} で更新できます。',
     githubH: 'GitHub', githubP: 'インストーラーとポータブル版、各バージョンのコンポーネント一覧。まだ署名していないため、初回は Windows が警告を出すことがあります。', githubBtn: 'バージョン一覧を見る',
     soon: '近日公開', req: 'Windows 10（1809）以降、64 ビット。',
-    report: '不具合を報告', contact: 'お問い合わせ', impressum: '法的情報',
+    report: '不具合を報告', contact: 'お問い合わせ', impressum: '法的情報', license: '使用許諾契約',
     privacyPage: 'en',
   },
   ko: {
@@ -480,7 +480,7 @@ export const T = {
     wingetH: 'winget', wingetP: '터미널에서 설치하는 분을 위해. {cmd}로 업데이트합니다.',
     githubH: 'GitHub', githubP: '설치 프로그램과 포터블 버전, 버전별 구성 요소 목록. 아직 서명하지 않아 처음에는 Windows가 경고할 수 있습니다.', githubBtn: '버전 보기',
     soon: '곧 출시', req: 'Windows 10 (1809) 이상, 64비트.',
-    report: '오류 신고', contact: '연락처', impressum: '법적 고지',
+    report: '오류 신고', contact: '연락처', impressum: '법적 고지', license: '라이선스 계약',
     privacyPage: 'en',
   },
   ru: {
@@ -523,7 +523,7 @@ export const T = {
     wingetH: 'winget', wingetP: 'Для тех, кто устанавливает из терминала. Обновление — {cmd}.',
     githubH: 'GitHub', githubP: 'Установщик и портативная версия со списком компонентов каждой версии. Пока без подписи: при первом запуске Windows может показать предупреждение.', githubBtn: 'Все версии',
     soon: 'скоро', req: 'Windows 10 (1809) или новее, 64 бит.',
-    report: 'Сообщить об ошибке', contact: 'Контакты', impressum: 'Правовая информация',
+    report: 'Сообщить об ошибке', contact: 'Контакты', impressum: 'Правовая информация', license: 'Лицензионное соглашение',
     privacyPage: 'en',
   },
   hi: {
@@ -566,7 +566,7 @@ export const T = {
     wingetH: 'winget', wingetP: 'टर्मिनल से इंस्टॉल करने वालों के लिए। {cmd} से अपडेट करें।',
     githubH: 'GitHub', githubP: 'इंस्टॉलर और पोर्टेबल संस्करण, हर संस्करण के घटकों की सूची के साथ। अभी हस्ताक्षरित नहीं: पहली बार Windows चेतावनी दे सकता है।', githubBtn: 'संस्करण देखें',
     soon: 'जल्द', req: 'Windows 10 (1809) या नया, 64-बिट।',
-    report: 'गड़बड़ी की रिपोर्ट करें', contact: 'संपर्क', impressum: 'क़ानूनी सूचना',
+    report: 'गड़बड़ी की रिपोर्ट करें', contact: 'संपर्क', impressum: 'क़ानूनी सूचना', license: 'लाइसेंस अनुबंध',
     privacyPage: 'en',
   },
 };

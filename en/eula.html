@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kozue License Agreement</title>
+<meta name="description" content="Kozue License Agreement">
+<link rel="canonical" href="https://kozue.app/en/eula.html">
+<link rel="alternate" hreflang="es" href="https://kozue.app/es/eula.html">
+<link rel="alternate" hreflang="en" href="https://kozue.app/en/eula.html">
+<link rel="alternate" hreflang="x-default" href="https://kozue.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kozue License Agreement">
+<meta property="og:description" content="Kozue License Agreement">
+<meta property="og:url" content="https://kozue.app/en/eula.html">
+
+<meta name="theme-color" content="#13213f">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/img/icono-300.png">
+<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/en/"><img src="/assets/img/icono-71.png" alt="" width="30" height="30">Kozue</a>
+    <nav class="nav" aria-label="Kozue">
+      <a href="/en/#funciones">Features</a>
+      <a href="/en/#descargar">Download</a>
+      <a href="/en/privacy.html">Privacy</a>
+      <a href="https://github.com/kozue-app/kozue">GitHub</a>
+      <label class="lang"><span class="skip">Language</span>
+        <select id="lang" aria-label="Language" data-path="/{l}/eula.html">
+          <option value="es" lang="es">Español</option><option value="en" lang="en" selected>English</option>
+        </select>
+      </label>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+  <div class="wrap doc"><article>
+<h1>Kozue License Agreement</h1>
+<p>Last updated: November 22, 2026</p>
+<p><a href="/es/eula.html">Español</a></p>
+<p>This agreement is between you and Yukio Mizuta, the developer of Kozue (contact details in the <a href="https://kozue.app/impressum.html">Impressum</a>). By installing or using Kozue, you accept it. If you don't accept it, don't install or use Kozue.</p>
+<h2>1. What you may do</h2>
+<p>Kozue is free of charge. You may install and use it on as many devices as you like, for personal or professional use. You may give unmodified copies of the official installer to others, as long as you don't charge for them.</p>
+<h2>2. What you may not do</h2>
+<ul><li>Sell, rent or sublicense Kozue, or include it in a paid product.</li><li>Modify Kozue, or decompile or disassemble it, except where the law allows it even without permission (for example, to make it work with other programs).</li><li>Remove or change the copyright notices, the license notices or the name «Kozue».</li></ul>
+<p>Kozue is licensed, not sold: the developer keeps all rights to it that this agreement doesn't give you.</p>
+<h2>3. Third-party components</h2>
+<p>Kozue includes third-party software (such as Electron and Chromium). Each component is used under its own license, listed in THIRD_PARTY_NOTICES.txt, LICENSE.electron.txt and LICENSES.chromium.html next to Kozue.exe. For those components, their licenses apply instead of this agreement.</p>
+<h2>4. Your services and content</h2>
+<p>Kozue connects only to the services and websites you add (such as Miniflux, Feedbin or a website's feed). Their terms and privacy policies apply to that use, and you are responsible for having the right to use them. Kozue is not affiliated with them. The articles, images and videos you read belong to their owners.</p>
+<h2>5. Privacy</h2>
+<p>Kozue doesn't collect data about you. Details in the <a href="https://kozue.app/en/privacy.html">privacy policy</a>.</p>
+<h2>6. Updates</h2>
+<p>New versions may change or remove features. This agreement also applies to updates, unless they come with a new version of it.</p>
+<h2>7. Liability</h2>
+<p>Kozue is given to you free of charge. The developer is liable only for intent and gross negligence, and for defects the developer fraudulently concealed. This doesn't limit liability for injury to life, body or health, or under the German Product Liability Act (Produkthaftungsgesetz). Otherwise, Kozue is provided as it is, without any warranty.</p>
+<h2>8. End of the agreement</h2>
+<p>You may end it at any time by uninstalling Kozue. It ends automatically if you break it; then you must uninstall Kozue.</p>
+<h2>9. Law</h2>
+<p>German law applies, excluding the UN Convention on Contracts for the International Sale of Goods (CISG). If you are a consumer, you keep the protection of the mandatory laws of the country where you live.</p>
+<h2>10. Microsoft Store</h2>
+<p>If you got Kozue from the Microsoft Store, Microsoft's terms for the Store also apply to how you get and update it.</p>
+  </article></div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Yukio Mizuta</span>
+    <a href="/en/privacy.html">Privacy</a>
+    <a href="/en/eula.html">License agreement</a>
+    <a href="/impressum.html">Legal notice</a>
+    <a href="https://github.com/kozue-app/kozue/issues">Report a bug</a>
+    <span>Contact: <span class="mail">hello@kozue.app</span></span>
+    <nav class="langs" aria-label="Language"><a href="/es/eula.html" lang="es" hreflang="es">Español</a><a href="/en/eula.html" lang="en" hreflang="en">English</a></nav>
+  </div>
+</footer>
+<script>
+  // Al elegir idioma: se recuerda (solo en este navegador) y se va a esa versión.
+  document.getElementById('lang').addEventListener('change', (ev) => {
+    const l = ev.target.value;
+    try { localStorage.setItem('kozue-web-lang', l); } catch {}
+    location.href = ev.target.dataset.path.replace('{l}', l);
+  });
+  document.querySelectorAll('.langs a').forEach((a) => a.addEventListener('click', () => { try { localStorage.setItem('kozue-web-lang', a.lang); } catch {} }));
+  const copy = document.getElementById('copy');
+  if (copy) copy.addEventListener('click', async () => {
+    const code = document.getElementById('winget');
+    try { await navigator.clipboard.writeText(code.textContent); copy.textContent = copy.dataset.copied; }
+    catch { const r = document.createRange(); r.selectNodeContents(code); const s = getSelection(); s.removeAllRanges(); s.addRange(r); copy.textContent = copy.dataset.selected; }
+    setTimeout(() => { copy.textContent = copy.dataset.label; }, 1800);
+  });
+</script>
+</body>
+</html>

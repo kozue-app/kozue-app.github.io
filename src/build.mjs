@@ -1,5 +1,5 @@
 // Genera kozue.app: /<idioma>/index.html (13 idiomas), / (elige el idioma del sistema o inglés), la política de
-// privacidad (/es/privacy.html y /en/privacy.html, desde src/privacy.*.md), el aviso legal (/impressum.html) y la 404.
+// privacidad y la licencia de uso (/es/ y /en/privacy.html y eula.html, desde src/privacy.*.md y src/eula.*.md), el aviso legal (/impressum.html) y la 404.
 //   node src/build.mjs
 // La salida se sube tal cual (GitHub Pages sirve la raíz del repo). Sin dependencias.
 import fs from 'node:fs';
@@ -77,6 +77,7 @@ function foot(l, pathFor, alternates = LANGS) {
   <div class="wrap">
     <span>© 2026 Yukio Mizuta</span>
     <a href="/${t.privacyPage}/privacy.html">${esc(t.navPrivacy)}</a>
+    <a href="/${t.privacyPage}/eula.html">${esc(t.license)}</a>
     <a href="/impressum.html">${esc(t.impressum)}</a>
     <a href="https://github.com/kozue-app/kozue/issues">${esc(t.report)}</a>
     <span>${esc(t.contact)}: <span class="mail">hello@kozue.app</span></span>
@@ -230,7 +231,7 @@ function md(src) {
   const inline = (s) => esc(s)
     .replace(/`([^`]+)`/g, '<code>$1</code>')
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, txt, url) => `<a href="${url.replace(/^PRIVACY\.es\.md$/, '/es/privacy.html').replace(/^PRIVACY\.md$/, '/en/privacy.html')}">${txt}</a>`);
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, txt, url) => `<a href="${url.replace(/^PRIVACY\.es\.md$/, '/es/privacy.html').replace(/^PRIVACY\.md$/, '/en/privacy.html').replace(/^EULA\.es\.md$/, '/es/eula.html').replace(/^EULA\.md$/, '/en/eula.html')}">${txt}</a>`);
   const out = [];
   for (const block of src.trim().split(/\n\s*\n/)) {
     const lines = block.split('\n');
@@ -242,10 +243,12 @@ function md(src) {
   return out.join('\n');
 }
 
-function privacy(l) {
-  const src = fs.readFileSync(path.join(ROOT, 'src', `privacy.${l}.md`), 'utf8');
+// Textos legales en es y en, desde src/<nombre>.<idioma>.md: la privacidad y la licencia de uso (copias de legal/ de
+// kozue-source; al cambiarlas allí, copiarlas aquí).
+function doc(name, l) {
+  const src = fs.readFileSync(path.join(ROOT, 'src', `${name}.${l}.md`), 'utf8');
   const title = src.match(/^# (.+)$/m)[1];
-  const pathFor = (a) => `/${a}/privacy.html`;
+  const pathFor = (a) => `/${a}/${name}.html`;
   return head(l, { title: `${title}`, description: title, pathFor, alternates: ['es', 'en'], ogImage: false })
     + `\n  <div class="wrap doc"><article>\n${md(src)}\n  </article></div>\n` + foot(l, pathFor, ['es', 'en']);
 }
@@ -316,8 +319,8 @@ function notFound() {
 }
 
 for (const l of LANGS) write(`${l}/index.html`, home(l));
-for (const l of ['es', 'en']) write(`${l}/privacy.html`, privacy(l));
+for (const l of ['es', 'en']) for (const name of ['privacy', 'eula']) write(`${l}/${name}.html`, doc(name, l));
 write('impressum.html', impressum());
 write('index.html', root());
 write('404.html', notFound());
-console.log(`${LANGS.length} idiomas, privacidad (es, en), impressum, raíz y 404.`);
+console.log(`${LANGS.length} idiomas, privacidad y licencia (es, en), impressum, raíz y 404.`);
